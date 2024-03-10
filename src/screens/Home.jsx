@@ -1,8 +1,17 @@
+import Navbar from "../components/Navbar"
+import dropLine from "../assets/Link.svg";
+import Hero from "../components/Hero";
+import Works from "../components/Works";
 
 const Home = () => {
   return (
     <div>
-       <h1 className="text-[90px] font-ibm" >Hello World!</h1>
+        <Navbar/>
+        <Hero/>
+        <Works/>
+        <div className=" bg-white fixed bottom-[1rem] right-[1rem]">
+            <img  className="dropline" src={dropLine} alt="drop-line" />
+        </div>
     </div>
   )
 }
