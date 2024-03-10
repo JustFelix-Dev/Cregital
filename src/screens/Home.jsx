@@ -3,6 +3,7 @@ import dropLine from "../assets/Link.svg";
 import Hero from "../components/Hero";
 import Works from "../components/Works";
 import WhoWeAre from "../components/WhoWeAre";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
         <Hero/>
         <Works/>
         <WhoWeAre/>
-        <div className=" bg-white fixed bottom-[1rem] right-[1rem]">
+        <Footer/>
+        <div className="dropline fixed bottom-[1.5rem] right-[1.5rem]">
             <img  className="dropline" src={dropLine} alt="drop-line" />
         </div>
     </div>
