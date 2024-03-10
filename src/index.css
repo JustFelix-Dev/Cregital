@@ -32,3 +32,24 @@
 .line-tight{
   line-height: 8.2rem;
 }
+
+.links{
+  position: relative;
+  isolation: isolate;
+  transition: background 300ms ease;
+
+}
+.links::before {
+  content: '';
+  position: absolute;
+  background-color: gainsboro;
+  inset: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 200ms ease;
+}
+
+.links:hover::before{
+  transform: scaleY(1);
+}
