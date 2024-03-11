@@ -10,7 +10,7 @@ const Footer = ({ mouseEnter, mouseLeave}) => {
       <div className="px-6 sm:px-0 flex flex-col gap-4 md:flex-row justify-between text-white font-ibm text-[15px] font-light">
         <p className="" >&copy; 2020 Cregital Design Agency</p>
         <div className="flex gap-4 ">
-            <a  onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} href="#">Instagram</a>
+            <a onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} href="#">Instagram</a>
             <a onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} href="#">Twitter</a>
             <a onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} href="#">Linkedin</a>
         </div>
