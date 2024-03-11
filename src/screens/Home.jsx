@@ -82,13 +82,13 @@ const Home = () => {
 
   return (
     <>
-    <div>
+    <div  className="px-6 sm:px-0">
         <Navbar mouseEnter={mouseEnter} mouseLeave={mouseLeave} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <Hero/>
         <Works mouseEnter={mouseImageEnter} mouseLeave={mouseImageLeave} />
         <WhoWeAre/>
         <Footer mouseEnter={mouseEnter} mouseLeave={mouseLeave} />
-        <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={openDropLine} className="dropline fixed bottom-[1.5rem] right-[1.5rem]">
+        <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={openDropLine} className=" hidden md:block dropline fixed bottom-[1.5rem] right-[1.5rem]">
             <img  className="dropline" src={dropLine} alt="drop-line" />
         </div>
     </div>
@@ -109,7 +109,7 @@ const Home = () => {
                 </motion.form>
                 </div>
             </div>
-         <div onClick={closeDropLine} className="dropline bg-white p-4 rounded-full fixed bottom-[3rem] right-[3rem]">
+         <div onClick={closeDropLine} className=" dropline bg-white p-4 rounded-full fixed bottom-[3rem] right-[3rem]">
             <img  className="dropline" src={cancelMenu} height={15} width={15} alt="drop-line" />
         </div>
       </div>
@@ -128,7 +128,6 @@ const Home = () => {
             </nav>
             <motion.div initial={{y:"400px",opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}} className="flex mx-auto items-center justify-center hero font-ibm text-[70px] font-semibold max-w-[23ch] text-white text-center">
                 <div className="-mt-8 menu-tight"> Learn more <a className="border-b border-[#aaa] footer-links">about us</a>, check out <a className=" border-b border-[#aaa] footer-links">our work</a>, the latest on <a className="border-b border-[#aaa] footer-links">instagram</a> and <a className="border-b border-[#aaa] footer-links">contact us</a></div>
-               
             </motion.div>
           </div>
     </>
